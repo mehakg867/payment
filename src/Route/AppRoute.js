@@ -9,7 +9,7 @@ function AppRoute() {
   <Routes>
     <Route path= "/Login">
     </Route>
-    
+    <Route path="/" element={<Home />} />
   </Routes>
     );
   }
