@@ -1,11 +1,12 @@
 import React from "react";
 import { useState } from "react";
 import { useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import CenteredContainer from "../../containers/CenteredContainer";
 import { useAuth } from "../../contexts/AuthContext";
 
 function Signup() {
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const emailRef = useRef();
   const passwordRef = useRef();
@@ -22,6 +23,7 @@ function Signup() {
     try {
       setLoading(true);
       await signup(emailRef.current.value, passwordRef.current.value);
+      navigate("/Login");
     } catch (error) {
       alert(error.message);
     } finally {

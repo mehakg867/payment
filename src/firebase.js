@@ -27,6 +27,7 @@ const firestore = app.firestore();
 //   users: () => firestore.collection("users"),
 // };
 // console.log(firebase);
+
 export const auth = app.auth();
 export const storage = app.storage();
 export default app;

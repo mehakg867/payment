@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import CenteredContainer from "../../containers/CenteredContainer";
 import { useAuth } from "../../contexts/AuthContext";
 
@@ -16,12 +16,17 @@ function Login() {
     try {
       setLoading(true);
       await login(emailRef.current.value, passwordRef.current.value);
+      navigate("/Info");
     } catch (error) {
       alert(error.message);
     } finally {
       setLoading(false);
     }
   }
+
+
+
+  const navigate = useNavigate();
 
   return (
     <CenteredContainer>

@@ -8,8 +8,9 @@ import ForgotPassword from "../component/auth/ForgotPassword";
 function AppRoute() {
     return (
   <Routes>
-            <Route path="/" element={<Info />} />
+            <Route path="/" element={<Login />} />
             <Route path="/Login" element={<Login />} />
+            <Route path="/Info" element={<Info />} />
             <Route path="/SignUp" element={<Signup />} />
             <Route path="/ForgotPassword" element={<ForgotPassword />} />
   </Routes>

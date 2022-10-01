@@ -36,7 +36,7 @@ function Info(){
        
 <div>
     <br></br>
-<PricingTable highlightColor="#1976D2">
+{/* <PricingTable highlightColor="#1976D2">
       <PricingSlot buttonText="TRY IT FREE" title="FREE" priceText="$0/month">
         <PricingDetail> Watch Free Content </PricingDetail>
         <PricingDetail> Hundreds of Episodes from our Library</PricingDetail>
@@ -46,10 +46,10 @@ function Info(){
         <PricingDetail> Everything in FREE + </PricingDetail>
         <PricingDetail> Ad Free Viewing Experience </PricingDetail>
         <PricingDetail> Watch Latest Episodes from shows on TV</PricingDetail>
-        {/* <PricingDetail>
+        <PricingDetail>
           {" "}
           Our entire library of Episodes, Specials, Documentaries and Movies
-        </PricingDetail> */}
+        </PricingDetail>
         <PricingDetail> </PricingDetail>
       </PricingSlot>
       <PricingSlot buttonText="TRY IT FREE" title="VIP" priceText="$6/month">
@@ -65,15 +65,20 @@ function Info(){
         <PricingDetail> Hundreds of Episodes from our Library</PricingDetail>
         <PricingDetail> Hundres of Short Form Pieces</PricingDetail>
       </PricingSlot>
-    </PricingTable>
-this is the payment page
+    </PricingTable> */}
+    
+{/* this is the payment page
 <StripeCheckout stripeKey="pk_test_51LnnpKSIAkwIAq1iR1Ai7KjFpkr9t7N8edPuAeiq1kdCqQWsxupmA59cyKgswNgkgJLDXoysDYbXa7yFazCK3qwH00pwg7Lb26"
 token={makePayment}
 name="BuyProduct">
 <button>
     buy the product
 </button>
-</StripeCheckout>
+</StripeCheckout> */}
+<a href="https://billing.stripe.com/p/login/test_14k00o4md65u0Rq7ss">Go to user DashBoard</a>
+ <stripe-pricing-table pricing-table-id="prctbl_1Lo3VTSIAkwIAq1iCnrdx0Zp"
+    publishable-key="pk_test_51LnnpKSIAkwIAq1iR1Ai7KjFpkr9t7N8edPuAeiq1kdCqQWsxupmA59cyKgswNgkgJLDXoysDYbXa7yFazCK3qwH00pwg7Lb26">
+    </stripe-pricing-table>
 </div>
 
     );
